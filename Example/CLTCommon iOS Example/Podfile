@@ -1,1 +1,1 @@
-pod 'CLTCommon', :podspec => 'https://github.com/cclovett/CLTCommon/CLTCommon.podspec'
+pod 'CLTCommon', :podspec => '../../CLTCommon.podspec'

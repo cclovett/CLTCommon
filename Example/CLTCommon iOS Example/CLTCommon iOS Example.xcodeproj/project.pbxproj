@@ -14,6 +14,7 @@
 		426320391ACD1A1D0075EFC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426320381ACD1A1D0075EFC5 /* Images.xcassets */; };
 		4263203C1ACD1A1D0075EFC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4263203A1ACD1A1D0075EFC5 /* LaunchScreen.xib */; };
 		426320481ACD1A1D0075EFC5 /* CLTCommon_iOS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 426320471ACD1A1D0075EFC5 /* CLTCommon_iOS_ExampleTests.m */; };
+		65BA690013A4AB54420C5A0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 004CBBACFAD4CADE40982D45 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004CBBACFAD4CADE40982D45 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA74270408B8722F275471A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		426320281ACD1A1D0075EFC5 /* CLTCommon iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CLTCommon iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4263202C1ACD1A1D0075EFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4263202D1ACD1A1D0075EFC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		426320411ACD1A1D0075EFC5 /* CLTCommon iOS ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CLTCommon iOS ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		426320461ACD1A1D0075EFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		426320471ACD1A1D0075EFC5 /* CLTCommon_iOS_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLTCommon_iOS_ExampleTests.m; sourceTree = "<group>"; };
+		DFE9836FFBC781C5CAC55055 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BA690013A4AB54420C5A0B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A5364BB33253432A9E9826 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74270408B8722F275471A /* Pods.debug.xcconfig */,
+				DFE9836FFBC781C5CAC55055 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30C3C12DBEC4C5D20182FE06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				004CBBACFAD4CADE40982D45 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4263201F1ACD1A1D0075EFC5 = {
 			isa = PBXGroup;
 			children = (
 				4263202A1ACD1A1D0075EFC5 /* CLTCommon iOS Example */,
 				426320441ACD1A1D0075EFC5 /* CLTCommon iOS ExampleTests */,
 				426320291ACD1A1D0075EFC5 /* Products */,
+				24A5364BB33253432A9E9826 /* Pods */,
+				30C3C12DBEC4C5D20182FE06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4263204B1ACD1A1D0075EFC5 /* Build configuration list for PBXNativeTarget "CLTCommon iOS Example" */;
 			buildPhases = (
+				E60B489B9100DE5F07F2AFA3 /* Check Pods Manifest.lock */,
 				426320241ACD1A1D0075EFC5 /* Sources */,
 				426320251ACD1A1D0075EFC5 /* Frameworks */,
 				426320261ACD1A1D0075EFC5 /* Resources */,
+				8855A4AE583FF8DBBCE93C07 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8855A4AE583FF8DBBCE93C07 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60B489B9100DE5F07F2AFA3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		426320241ACD1A1D0075EFC5 /* Sources */ = {
@@ -343,20 +402,36 @@
 		};
 		4263204C1ACD1A1D0075EFC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA74270408B8722F275471A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CLTCommon iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-CLTCommon\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		4263204D1ACD1A1D0075EFC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE9836FFBC781C5CAC55055 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CLTCommon iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-CLTCommon\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +489,7 @@
 				4263204D1ACD1A1D0075EFC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4263204E1ACD1A1D0075EFC5 /* Build configuration list for PBXNativeTarget "CLTCommon iOS ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +498,7 @@
 				426320501ACD1A1D0075EFC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

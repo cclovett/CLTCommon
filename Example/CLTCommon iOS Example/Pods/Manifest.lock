@@ -1,0 +1,14 @@
+PODS:
+  - CLTCommon (0.0.1)
+
+DEPENDENCIES:
+  - CLTCommon (from `../../CLTCommon.podspec`)
+
+EXTERNAL SOURCES:
+  CLTCommon:
+    :podspec: ../../CLTCommon.podspec
+
+SPEC CHECKSUMS:
+  CLTCommon: 83051324107b4dc38ce8d2b611838148b680a4c0
+
+COCOAPODS: 0.36.3

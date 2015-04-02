@@ -20,15 +20,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "6.0"
   s.osx.deployment_target = "10.8"
 
-  s.source       = { :git => "https://github.com/cclovett/CLTCommon.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/cclovett/CLTCommon.git", :tag => "master" }
 
-  s.source_files  = "CLTCommon/Classes", "CLTCommon/Classes/**/*.{h,m}"
+  s.source_files  = "CLTCommon", "CLTCommon/Classes/**/*.{h,m}"
 
   s.public_header_files = "CLTCommon/Classes/**/*.h"
 
-  s.framework  = "UIKit"
-
   s.requires_arc = true
-
-
+  
 end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSString+CLT_Unitils.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *ss = @"";
+    ss = [ss c_CLT_test];
+    NSLog(@"123 = %@",ss);
 }
 
 - (void)didReceiveMemoryWarning {
