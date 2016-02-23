@@ -2,11 +2,17 @@ PODS:
   - CLTCommon (0.0.3)
 
 DEPENDENCIES:
-  - CLTCommon (from `../../`)
+  - CLTCommon (from `https://github.com/cclovett/CLTCommon.git`, branch `master`)
 
 EXTERNAL SOURCES:
   CLTCommon:
-    :path: ../../
+    :branch: master
+    :git: https://github.com/cclovett/CLTCommon.git
+
+CHECKOUT OPTIONS:
+  CLTCommon:
+    :commit: 3370744c1209757bad09f8c84bb2723eabbbefa9
+    :git: https://github.com/cclovett/CLTCommon.git
 
 SPEC CHECKSUMS:
   CLTCommon: dadddd839cbf03df50b37a2149202ba7c117edd7

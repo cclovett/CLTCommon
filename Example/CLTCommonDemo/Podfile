@@ -8,4 +8,4 @@ inhibit_all_warnings!
 pod 'CLTCommon', :path => '../../'
 
 ## 正式代码
-pod 'CLTCommon', :git => "https://github.com/cclovett/CLTCommon.git", :branch => 'master'
+#pod 'CLTCommon', :git => "https://github.com/cclovett/CLTCommon.git", :branch => 'master'
