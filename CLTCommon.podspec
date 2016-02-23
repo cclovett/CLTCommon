@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CLTCommon"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A short description of CLTCommon."
 
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/cclovett/CLTCommon.git", :tag => "0.0.4"}
+  s.source       = { :git => "https://github.com/cclovett/CLTCommon.git", :tag => "0.0.5"}
 
   s.source_files  = "CLTCommon", "CLTCommon/**/*.{h,m,mm,cpp,c}", 'CLTCommon/CLTCommon.h'
 
