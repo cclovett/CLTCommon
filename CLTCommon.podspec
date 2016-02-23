@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   
   s.authors             = { "Cc" => "196159353@qq.com" }
 
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "https://github.com/cclovett/CLTCommon.git", :tag => "0.0.4"}
 

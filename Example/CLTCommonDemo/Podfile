@@ -1,3 +1,4 @@
+platform :ios, '8.0'
 use_frameworks!
 inhibit_all_warnings!
 
@@ -5,7 +6,8 @@ inhibit_all_warnings!
 #pod 'CLTCommon', :podspec => '../../CLTCommon.podspec'
 
 ## 测试代码
-pod 'CLTCommon', :path => '../../'
+#pod 'CLTCommon', :path => '../../'
 
 ## 正式代码
 #pod 'CLTCommon', :git => "https://github.com/cclovett/CLTCommon.git", :branch => 'master'
+pod 'CLTCommon', :git => 'https://github.com/cclovett/CLTCommon.git', :tag => '0.0.4'

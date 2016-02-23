@@ -1,20 +1,20 @@
 PODS:
-  - CLTCommon (0.0.3)
+  - CLTCommon (0.0.4)
 
 DEPENDENCIES:
-  - CLTCommon (from `https://github.com/cclovett/CLTCommon.git`, branch `master`)
+  - CLTCommon (from `https://github.com/cclovett/CLTCommon.git`, tag `0.0.4`)
 
 EXTERNAL SOURCES:
   CLTCommon:
-    :branch: master
     :git: https://github.com/cclovett/CLTCommon.git
+    :tag: 0.0.4
 
 CHECKOUT OPTIONS:
   CLTCommon:
-    :commit: 3370744c1209757bad09f8c84bb2723eabbbefa9
     :git: https://github.com/cclovett/CLTCommon.git
+    :tag: 0.0.4
 
 SPEC CHECKSUMS:
-  CLTCommon: dadddd839cbf03df50b37a2149202ba7c117edd7
+  CLTCommon: a89340d628f0bbedbc5ac33b163ea5d7b347c01a
 
 COCOAPODS: 0.38.2
