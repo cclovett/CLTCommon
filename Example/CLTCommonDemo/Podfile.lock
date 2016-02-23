@@ -1,0 +1,14 @@
+PODS:
+  - CLTCommon (0.0.3)
+
+DEPENDENCIES:
+  - CLTCommon (from `../../`)
+
+EXTERNAL SOURCES:
+  CLTCommon:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  CLTCommon: dadddd839cbf03df50b37a2149202ba7c117edd7
+
+COCOAPODS: 0.38.2

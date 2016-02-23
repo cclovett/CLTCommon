@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CLTCommon"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A short description of CLTCommon."
 
   s.description  = <<-DESC
@@ -15,17 +15,18 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/cclovett/CLTCommon"
   
-  s.authors             = { "Cc" => "fenghaoran@camera360.com" }
+  s.authors             = { "Cc" => "196159353@qq.com" }
 
-  s.ios.deployment_target = "6.0"
-  s.osx.deployment_target = "10.8"
+  s.ios.deployment_target = "7.0"
 
   s.source       = { :git => "https://github.com/cclovett/CLTCommon.git", :tag => "master" }
 
-  s.source_files  = "CLTCommon", "CLTCommon/Classes/**/*.{h,m}"
-
-  s.public_header_files = "CLTCommon/Classes/**/*.h"
+  s.source_files  = "CLTCommon", "CLTCommon/**/*.{h,m,mm,cpp,c}", 'CLTCommon/CLTCommon.h'
 
   s.requires_arc = true
+
+#  s.frameworks = 'ImageIO', 'CoreMotion', 'CoreMedia', 'CoreImage', 'CoreGraphics', 'CoreData'
+  
+#  s.libraries = 'z', 'stdc++', 'c++'
   
 end
